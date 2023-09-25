@@ -1,41 +1,65 @@
 /* eslint-disable react/prop-types */
-
+import './Pages.css'
 import { Link } from "react-router-dom";
 
 const Card = ({card}) => {
     const {image, id, title, category} = card ;
 
     const categoryColors = {
-        'clothes': 'red',
-        'Food': 'blue',
-        'Education' : 'gray',
-        'Health' : 'green'
+        'clothes': ' rgba(121, 194, 63, 0.15)',
+        'Food': 'rgba(248, 113, 71, 0.15)',
+        'Education' : 'Plum',
+        'Health' : 'rgba(0, 82, 255, 0.15)'
 
-        // Define colors for other categories
+        
       };
-    
-      // Default color for unknown categories
+     
       const defaultColor = 'white';
     
-      // Get the background color based on the category
-      const backgroundColor = categoryColors[category] || defaultColor;
+    
+      const bbackgroundColor = categoryColors[category] || defaultColor;
+
+
+      const TextColors = {
+        'clothes': ' #79C23F',
+        'Food': '#F87147',
+        'Education' : 'PaleVioletRed',
+        'Health' : 'SteelBlue'
+
+        
+      };
+     
+      const DefaultColor = 'white';
+    
+    
+      const textColor = TextColors[category] || DefaultColor;
+
+
+
+      
+     
+      
+
+      
 
 
   return (
     <div>
       <Link to={`/details/${id}`}>
-        <div  className="card w-52  bg-base-100 shadow-xl"  style={{ backgroundColor }} >
-  <figure><img src={image} alt="Shoes" /></figure>
+        <div  className="card w-52  bg-base-100 shadow-xl"  style={{ backgroundColor : bbackgroundColor }} >
+  <figure><img src={image} alt="cardd" /></figure>
   <div className="card-body">
 
   
 
 
   <div className="card-actions ">
-      <button className="btn btn-primary bg-gray-400 pt-1 px-3 rounded-md ml-2 mt-4  ">{category}</button>
+      <button  className="btn pt-1 px-3 rounded-md ml-2 mt-4 " style={{ backgroundColor : textColor , color : bbackgroundColor }}>{category}</button>
     </div>
 
-    <h2 className="card-title mb-6 mx-2">{title}</h2>
+    <h2 className="card-title mt-6 mb-5 font-bold mx-2" style={{color : textColor }}>{title}</h2>
+    {/* className="btn bg-gray-400 pt-1 px-3 rounded-md ml-2 mt-4  "  */}
+  
 
     
     

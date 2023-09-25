@@ -2,6 +2,8 @@
      [
         
           {
+           
+          "price" : 380 ,
             "category" : "Food",
             "id": 3,
             "image":"/Resources/food2.jpg"  ,
@@ -10,37 +12,50 @@
           
 
           {
+           
+            "price" : 370 ,
             "category" : "Health",
             "id": 4,
             "image": "/Resources/h3.jpg"     ,    
               "title": "First Aid Kit"
           },
           {
+           
+           "price" : 340 ,
             "category" : "Health",
             "id": 5,
             "image": "/Resources/h1.jpg" ,
               "title": "Medical Supplies"
           },
-          {
-            "category" : "Health",
-            "id": 6,
-            "image": "/Resources/h2.jpg"     ,
-            "title": "Personal Protective"
-          },
+         
 
           {
+           
+          "price" : 390 ,
             "category" : "clothes",
             "id": 7,
             "image": "/Resources/c3.jpg",
             "title": "Winter Coats"
           },
           {
+           
+          "price" : 300 ,
+            "category" : "Education",
+            "id": 10,
+            "image": "/Resources/edu4.jpg",
+            "title": "Laptops and Tablets"
+          },
+          {
+           
+          "price" : 180 ,
             "category" : "clothes",
             "id": 8,
             "image": "/Resources/c2.jpg",
             "title": "Children's Clothing"
           },
           {
+           
+          "price" : 320 ,
             "category" : "clothes",
             "id": 9,
             "image": "/Resources/c1.jpg",
@@ -48,32 +63,44 @@
           },
 
 
+          
           {
-            "category" : "Education",
-            "id": 10,
-            "image": "/Resources/edu4.jpg",
-            "title": "Laptops and Tablets"
-          },
-          {
+           
+          "price" : 480 ,
             "category" : "Education",
             "id": 11,
             "image": "/Resources/edu3.jpg",
             "title": "Educational Books"
           },
           {
-            "category" : "Education",
-            "id": 32,
-            "image": "/Resources/edu2.jpg",
-            "title": "Scholarship Fund"
+           
+          "price" : 680 ,
+            "category" : "Health",
+            "id": 6,
+            "image": "/Resources/h2.jpg"     ,
+            "title": "Personal Protective"
           },
-
           {
+           
+          "price" : 370 ,
             "category" : "Food",
             "id": 21,
             "image": "/Resources/food1.jpg",
             "title": "Educational Books"
           },
           {
+           
+          "price" : 580 ,
+            "category" : "Education",
+            "id": 32,
+            "image": "/Resources/edu2.jpg",
+            "title": "Scholarship Fund"
+          },
+
+          
+          {
+           
+          "price" : 680 ,
             "category" : "Food",
             "id": 12,
             "image": "/Resources/food3.jpg",

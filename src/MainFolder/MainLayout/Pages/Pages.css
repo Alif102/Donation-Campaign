@@ -2,3 +2,13 @@
     color: red;
     text-decoration: underline;
   }
+
+  /* ButtonList.css */
+
+  .button-category-A {
+    background-color: red;
+  }
+  
+  .button-category-B {
+    background-color: blue;
+  }
