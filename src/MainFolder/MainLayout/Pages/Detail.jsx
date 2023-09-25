@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
+import './Pages.css'
 
 import swal from "sweetalert";
 
 const Detail = ({detail}) => {
-    const {id,image, title, price} = detail;
+    const {id,image, title, price, description} = detail;
 
     const handleAddToDonate = ()=>{
       const donationArray = [];
@@ -27,10 +28,17 @@ const Detail = ({detail}) => {
       }
     }
   return (
-    <div>
-        <img src={image} alt="img" />
+    <div className=' w-max-[1200px] mx-auto'>
+        <div className='bg-image'>
+        <img className="w-[1200px] mx-auto" src={image} alt="img" />
+        </div>
+        <div className=" bg-back p-4 ">
         <button onClick={handleAddToDonate} className="bg-[red] text-white font-bold rounded-md mt-3 py-2 px-3">Donate $ {price}</button>
-        <h2 className="text-3xl font-bold mt-4 mb-3">{title}</h2>
+        </div>
+       <div className=' w-[1200px] mx-auto'>
+       <h2 className="text-3xl font-bold mt-4 mb-3">{title}</h2>
+        <h2 className='mt-3 mb-8'>{description}</h2>
+        </div> 
 
     </div>
   )

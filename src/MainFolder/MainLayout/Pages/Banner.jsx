@@ -4,7 +4,7 @@ const Banner = () => {
         <div>
            
 <div className="opacity-20 ">
-<img src='/public/Resources/edu1.jpg' className=" w-[1150px]  " />
+<img src='/public/Resources/edu1.jpg' className=" w-full " />
 </div>
 
             

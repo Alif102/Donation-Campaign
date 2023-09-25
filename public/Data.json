@@ -1,100 +1,154 @@
+
 [
-    {
-      "id": "1",
-      "image": "https://static-01.daraz.com.bd/p/b802b8ebb0a784ec791caa75e2d4de66.jpg",
-      "phone_name": "iPhone 14 Pro Max",
-      "brand_name": "Apple",
-      "price": 799.99,
-      "rating": 4.7
-    },
-    {
-      "id": "2",
-      "image": "https://static-01.daraz.com.bd/p/1ec88cbfff48b223f1dbb92ce20df4ec.jpg",
-      "phone_name": "iPhone 14 Pro",
-      "brand_name": "Apple",
-      "price": 899.99,
-      "rating": 4.9
-    },
-    {
-      "id": "3",
-      "image": "https://static-01.daraz.com.bd/p/986dd21bae23af5b4186e0029dce42a7.jpg",
-      "phone_name": "iPhone 12",
-      "brand_name": "Apple",
-      "price": 999.99,
-      "rating": 3.5
-    },
-    {
-      "id": "4",
-      "image": "https://static-01.daraz.com.bd/p/285dfcce48daca08bbff06e6fb340200.jpg",
-      "phone_name": "iPhone 12 Pro Max",
-      "brand_name": "Apple",
-      "price": 699.99,
-      "rating": 4.5
-    },
-    {
-      "id": "5",
-      "image": "https://static-01.daraz.com.bd/p/ed234dd8498445e98c74028ddd0f966b.jpg",
-      "phone_name": "Samsung Galaxy S21",
-      "brand_name": "Samsung",
-      "price": 899.99,
-      "rating": 2.9
-    },
-    {
-      "id": "6",
-      "image": "https://static-01.daraz.com.bd/p/89a1dda89c94b5bdbe0acbe205fc799c.jpg",
-      "phone_name": "Samsung Galaxy F23",
-      "brand_name": "Samsung",
-      "price": 1099.99,
-      "rating": 5.0
-    },
-    {
-      "id": "7",
-      "image": "https://static-01.daraz.com.bd/p/3fc5a8e21be21833bd0bcf2b8382fddc.jpg",
-      "phone_name": "Samsung Galaxy A33",
-      "brand_name": "Samsung",
-      "price": 999.99,
-      "rating": 4.7
-    },
-    {
-      "id": "8",
-      "image": "https://static-01.daraz.com.bd/p/ed234dd8498445e98c74028ddd0f966b.jpg",
-      "phone_name": "Samsung Galaxy Note 5",
-      "brand_name": "Samsung",
-      "price": 999.99,
-      "rating": 4.7
-    },
-    
+        
   
-    {
-      "id": "9",
-      "image": "https://static-01.daraz.com.bd/p/627f7b3da3437c31a24cb6d1a9eb51bd.jpg",
-      "phone_name": "Xiaomi Redmi 11",
-      "brand_name": "Xiaomi",
-      "price": 1199.99,
-      "rating": 4.8
-    },
-    {
-      "id": "10",
-      "image": "https://static-01.daraz.com.bd/p/ff3deae774e41a9491019b2d893d5a4c.jpg",
-      "phone_name": "Xiaomi Redmi Note",
-      "brand_name": "Xiaomi",
-      "price": 1299.99,
-      "rating": 3.9
-    },
-    {
-      "id": "11",
-      "image": "https://static-01.daraz.com.bd/p/30e0eae11e7cfcf2924cf41d283553ae.jpg",
-      "phone_name": "Xiaomi Redmi 10A",
-      "brand_name": "Xiaomi",
-      "price": 1099.99,
-      "rating": 4.7
-    },
-    {
-      "id": "12",
-      "image": "https://static-01.daraz.com.bd/p/19b133906213bcccda357d36de841f97.jpg",
-      "phone_name": "Redmi 12C",
-      "brand_name": "Xiaomi",
-      "price": 1399.99,
-      "rating": 4.8
-    }
-  ]
+  
+  {
+    "price" : 680 ,
+    "category" : "Food",
+    "id": 12,
+    "image": "/Resources/food3.jpg",
+    "description" : "Food is Many bright students from disadvantaged backgrounds struggle to access higher education. Your donation will fund scholarships, enabling these students to pursue their dreams and build a better future.",
+    "total" : "120",
+    "title": "Scholarship Fund"
+  },
+  {
+   
+   
+    "price" : 370 ,
+    "category" : "Health",
+    "id": 4,
+    "image": "/Resources/h3.jpg"     ,    
+    "description" : "Natural disasters and crises can leave families in dire need of food. Your donation will help provide emergency food relief to those affected, ensuring that they have access to nutritious meals during difficult times.",  
+    "total" : "120",
+    "title": "First Aid Kit"
+  },
+  
+
+  {
+   
+ 
+    "price" : 390 ,
+    "category" : "clothes", 
+    "id": 7,
+    "image": "/Resources/edu1.jpg",
+    "description" : "Many bright students from disadvantaged backgrounds struggle to access higher education. Your donation will fund scholarships, enabling these students to pursue their dreams and build a better future.",
+    "total" : "120",
+    "title": "Winter Coats"
+  },
+  {
+   
+ 
+    "price" : 300 ,
+    "category" : "Education",
+    "id": 10,
+    "image": "/Resources/edu4.jpg",
+    "description" : "Education is a powerful tool for breaking the cycle of poverty. Your contribution will support access to quality education for children in marginalized communities, giving them a brighter future",
+    "total" : "120",
+    "title": "Laptops and Tablets"
+  },
+  {
+   
+ 
+    "price" : 180 ,
+    "category" : "clothes",
+    "id": 8,
+    "image": "/Resources/c2.jpg",
+    "description" : "As the temperature drops, many in our community are in need of warm clothing to stay comfortable and safe. Your donation will support our Warm Clothing Drive, providing winter coats, gloves, and blankets to those who need them most.",
+    "total" : "120",
+    "title": "Children's Clothing"
+  },
+  {
+   
+  
+    "price" : 340 ,
+    "category" : "Health",
+    "id": 5,
+    "image": "/Resources/h1.jpg" ,
+    "description" : "Access to medical supplies can be a matter of life and death for some. Your donation will help provide essential medical supplies to underserved healthcare facilities, ensuring that patients receive the care they need.",  
+    "total" : "120",
+    "title": "Medical Supplies"
+  },
+ 
+  {
+   
+ 
+    "price" : 320 ,
+    "category" : "clothes",
+    "id": 9,
+    "image": "/Resources/c1.jpg",
+    "description" : "Cloth is a powerful tool for breaking the cycle of poverty. Your contribution will support access to quality education for children in marginalized communities, giving them a brighter future",
+    "total" : "120",
+    "title": "Blankets welfare"
+  },
+
+
+  
+  {
+   
+ 
+    "price" : 480 ,
+    "category" : "Education",
+    "id": 11,
+    "image": "/Resources/edu3.jpg",
+    "description" : "As the education drops, many in our community are in need of warm clothing to stay comfortable and safe. Your donation will support our Warm Clothing Drive, providing winter coats, gloves, and blankets to those who need them most.",
+    "total" : "120",
+    "title": "Educational Books"
+  },
+  {
+   
+ 
+    "price" : 680 ,
+    "category" : "Health",
+    "id": 6,
+    "image": "/Resources/h2.jpg"     ,
+    "description" : "Health the many drops, many in our community are in need of warm clothing to stay comfortable and safe. Your donation will support our Warm health Drive, providing winter coats, gloves, and blankets to those who need them most.",
+    "total" : "120",
+    "title": "Personal Protective"
+  },
+  {
+   
+ 
+    "price" : 370 ,
+    "category" : "Food",
+    "id": 21,
+    "image": "/Resources/food1.jpg",
+    "description" : "Food is a powerful tool for breaking the cycle of poverty. Your contribution will support access to quality education for children in marginalized communities, giving them a brighter future",
+    "total" : "120",
+    "title": "Educational Books"
+  },
+  {
+   
+ 
+    "price" : 580 ,
+    "category" : "Education",
+    "id": 32,
+    "image": "/Resources/edu2.jpg",
+    "description" : "powerful is a education tool for breaking the cycle of poverty. Your contribution will support access to quality education for children in marginalized communities, giving them a brighter",
+    "total" : "120",
+    "title": "Scholarship Fund"
+  },
+
+  
+  
+  {
+   
+ 
+    "price" : 380 ,
+    "category" : "Food",
+    "id": 3,
+    "image":"/Resources/food2.jpg"  ,
+    "description" : "Your donation will help provide nutritious meals to those in need in our community. Hunger is a pressing issue, and your contribution can make a real difference. Together, we can ensure that no one goes to bed hungry.",
+    "total" : "120",
+    "title": "Canned Soup"
+  }
+
+
+
+
+
+
+
+
+]
+

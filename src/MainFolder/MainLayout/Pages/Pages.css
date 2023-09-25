@@ -3,12 +3,33 @@
     text-decoration: underline;
   }
 
-  /* ButtonList.css */
 
-  .button-category-A {
-    background-color: red;
-  }
+
+  .bg-image {
+    /* The image used */
+   
   
-  .button-category-B {
-    background-color: blue;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
+
+ .bg-back{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4);
+
+  color: white;
+  font-weight: bold;
+  
+  position: absolute;
+  top: 145%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 89%;
+  padding: 20px;
+
+
+ }
