@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 const Card = ({card}) => {
-    const {image, title, category} = card ;
+    const {image, id, title, category} = card ;
 
     const categoryColors = {
         'clothes': 'red',
@@ -21,7 +23,8 @@ const Card = ({card}) => {
 
   return (
     <div>
-        <div className="card w-52  bg-base-100 shadow-xl"  style={{ backgroundColor }} >
+      <Link to={`/details/${id}`}>
+        <div  className="card w-52  bg-base-100 shadow-xl"  style={{ backgroundColor }} >
   <figure><img src={image} alt="Shoes" /></figure>
   <div className="card-body">
 
@@ -37,7 +40,7 @@ const Card = ({card}) => {
     
     
   </div>
-</div>
+</div> </Link>
     </div>
   )
 }
