@@ -67,17 +67,7 @@ const Cards = ({cards}) => {
 
 
             </div>
-            {/* <div className=" max-w-[1200px] mx-auto mt-5 ">
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-md mt-8 mb-12 gap-5">
-        {data.map((item) => (
-          
-          <ShowCard key={item.id} item={item}></ShowCard>
-       
-        
-          
-        ))}
-      </ul>
-      </div> */}
+            
       
             
 
@@ -103,7 +93,7 @@ const Cards = ({cards}) => {
             {
               isShow ? 
               <div className=" mt-5 ">
-            <ul className="flex flex-1 gap-5">
+            <ul className="md:flex md:flex-1 gap-5">
         {data.map((item) => (
           
           <ShowCard key={item.id} item={item}></ShowCard>

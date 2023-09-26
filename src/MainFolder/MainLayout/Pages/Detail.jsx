@@ -28,16 +28,20 @@ const Detail = ({detail}) => {
       }
     }
   return (
-    <div className=' w-max-[1200px] mx-auto'>
+    <div className=' md:w-max-[1200px] mx-auto'>
         <div className='bg-image'>
-        <img className="w-[1200px] mx-auto" src={image} alt="img" />
+        <img className="md:w-[1200px]  mx-auto" src={image} alt="img" />
         </div>
-        <div className=" bg-back p-4 ">
+        <div className=" bg-back">
         <button onClick={handleAddToDonate} className="bg-[red] text-white font-bold rounded-md mt-3 py-2 px-3">Donate $ {price}</button>
         </div>
-       <div className=' w-[1200px] mx-auto'>
-       <h2 className="text-3xl font-bold mt-4 mb-3">{title}</h2>
-        <h2 className='mt-3 mb-8'>{description}</h2>
+        <div className=" md:hidden lg:hidden">
+        <button onClick={handleAddToDonate} className="bg-[red] text-white font-bold rounded-md mt-3 py-2 px-3">Donate $ {price}</button>
+        </div>
+       
+       <div className=' md:w-[1200px] mx-auto'>
+       <h2 className="text-3xl font-bold md:mt-4 md:mb-3">{title}</h2>
+        <h2 className='md:mt-3 md:mb-8 w-[500px] md:w-full  text-xl'>{description}</h2>
         </div> 
 
     </div>

@@ -7,10 +7,10 @@ const ShowCard = ({item}) => {
 
 
     const categoryColors = {
-        'clothes': ' rgba(121, 194, 63, 0.15)',
-        'Food': 'rgba(248, 113, 71, 0.15)',
-        'Education' : 'Plum',
-        'Health' : 'rgba(0, 82, 255, 0.15)'    
+      'Clothes':'skyblue' ,
+      'Food': 'papayawhip',
+      'Education' : 'Plum',
+      'Health' : 'salmon'     
       };    
       const defaultColor = 'white'; 
       const bbackgroundColor = categoryColors[category] || defaultColor;
@@ -20,16 +20,28 @@ const ShowCard = ({item}) => {
 
 
       const TextColors = {
-        'clothes': ' #79C23F',
-        'Food': '#F87147',
-        'Education' : 'PaleVioletRed',
-        'Health' : 'SteelBlue'
+        'Clothes': '#0052FF',
+        'Food': 'magenta',
+        'Education' : 'purple',
+        'Health' : 'crimson'
 
         
       };
      
       const DefaultColor = 'white';
       const textColor = TextColors[category] || DefaultColor;
+
+      const FontColors = {
+        'Clothes': 'skyblue',
+        'Food': 'papayawhip',
+        'Education' : 'Plum',
+        'Health' : 'salmon'
+
+        
+      };
+     
+      const DefaultCol = 'gray';
+      const FontColor = FontColors[category] || DefaultCol
 
 
 
@@ -48,10 +60,10 @@ const ShowCard = ({item}) => {
 
 
   <div className="card-actions ">
-      <button  className="btn pt-1 px-3 rounded-md ml-2 mt-4 " style={{ backgroundColor : textColor  }}>{category}</button>
+      <button  className="btn px-3 font-bold text-xl rounded-md ml-2 mt-4 " style={{ backgroundColor : textColor , color : FontColor  }}>{category}</button>
     </div>
 
-    <h2 className="card-title mt-6 mb-5 font-bold mx-2" style={{color : textColor }}>{title}</h2>
+    <h2 className="card-title mt-2 mb-5 font-bold mx-2" style={{color : textColor }}>{title}</h2>
     {/* className="btn bg-gray-400 pt-1 px-3 rounded-md ml-2 mt-4  "  */}
     
     

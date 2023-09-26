@@ -59,10 +59,10 @@ const Card = ({card}) => {
 
 
   <div className="card-actions ">
-      <button  className="btn pt-1 px-3 font-bold text-2xl rounded-md ml-2 mt-4 " style={{ backgroundColor : textColor , color : FontColor  }}>{category}</button>
+      <button  className="btn px-3 font-bold text-xl rounded-md ml-2 mt-4 " style={{ backgroundColor : textColor , color : FontColor  }}>{category}</button>
     </div>
 
-    <h2 className="card-title mt-6 mb-5 font-bold mx-2" style={{color : textColor }}>{title}</h2>
+    <h2 className="card-title mt-2 mb-5 font-bold mx-2" style={{color : textColor }}>{title}</h2>
     {/* className="btn bg-gray-400 pt-1 px-3 rounded-md ml-2 mt-4  "  */}
     
     

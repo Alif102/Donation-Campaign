@@ -59,7 +59,7 @@ return (
   
       
       <div className="card w-[500px] grid grid-cols-1 md:grid-cols-2 card-side bg-base-100">
-<figure><img className="w-[370px] h-full" src={image} alt="Movie"/></figure>
+<figure><img className="md:w-[370px] w-full h-full" src={image} alt="Movie"/></figure>
 <div style={{ backgroundColor : bbackgroundColor }} className="card-body flex flex-col items-center">
   
   <h2 className="p-2 rounded-md mr-3 mt-3" style={{ backgroundColor : textColor , color: FontColor }}>{category}</h2> 

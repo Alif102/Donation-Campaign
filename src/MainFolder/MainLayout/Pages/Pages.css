@@ -1,5 +1,8 @@
 #sidebar a.active {
     color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    padding: 5px;
     text-decoration: underline;
   }
 
@@ -22,14 +25,20 @@
 
   color: white;
   font-weight: bold;
-  
   position: absolute;
+  
   top: 145%;
-  left: 50%;
+  left: 50%; 
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 89%;
   padding: 20px;
 
 
+ }
+
+ @media only screen and (max-width: 600px) and (min-width: 400px)  {
+  .bg-back{
+    display: none;
+  }
  }
