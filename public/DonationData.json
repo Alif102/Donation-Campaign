@@ -42,7 +42,7 @@
            
          
             "price" : 390 ,
-            "category" : "clothes", 
+            "category" : "Clothes", 
             "id": 7,
             "image": "/Resources/edu1.jpg",
             "description" : "Many bright students from disadvantaged backgrounds struggle to access higher education. Your donation will fund scholarships, enabling these students to pursue their dreams and build a better future.",
@@ -64,7 +64,7 @@
            
          
             "price" : 180 ,
-            "category" : "clothes",
+            "category" : "Clothes",
             "id": 8,
             "image": "/Resources/c2.jpg",
             "description" : "As the temperature drops, many in our community are in need of warm clothing to stay comfortable and safe. Your donation will support our Warm Clothing Drive, providing winter coats, gloves, and blankets to those who need them most.",
@@ -75,7 +75,7 @@
            
          
             "price" : 320 ,
-            "category" : "clothes",
+            "category" : "Clothes",
             "id": 9,
             "image": "/Resources/c1.jpg",
             "description" : "Cloth is a powerful tool for breaking the cycle of poverty. Your contribution will support access to quality education for children in marginalized communities, giving them a brighter future",

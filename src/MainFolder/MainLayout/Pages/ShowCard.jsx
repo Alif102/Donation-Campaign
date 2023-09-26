@@ -1,17 +1,16 @@
 /* eslint-disable react/prop-types */
-import './Pages.css'
+
 import { Link } from "react-router-dom";
 
+const ShowCard = ({item}) => {
+    const {image, id, category,title} = item;
 
-const Card = ({card}) => {
-    const {image, id, title, category} = card ;
-    
 
     const categoryColors = {
-        'Clothes':'skyblue' ,
-        'Food': 'papayawhip',
+        'clothes': ' rgba(121, 194, 63, 0.15)',
+        'Food': 'rgba(248, 113, 71, 0.15)',
         'Education' : 'Plum',
-        'Health' : 'salmon'    
+        'Health' : 'rgba(0, 82, 255, 0.15)'    
       };    
       const defaultColor = 'white'; 
       const bbackgroundColor = categoryColors[category] || defaultColor;
@@ -21,10 +20,10 @@ const Card = ({card}) => {
 
 
       const TextColors = {
-        'Clothes': '#0052FF',
-        'Food': 'magenta',
-        'Education' : 'purple',
-        'Health' : 'crimson'
+        'clothes': ' #79C23F',
+        'Food': '#F87147',
+        'Education' : 'PaleVioletRed',
+        'Health' : 'SteelBlue'
 
         
       };
@@ -32,23 +31,13 @@ const Card = ({card}) => {
       const DefaultColor = 'white';
       const textColor = TextColors[category] || DefaultColor;
 
-      const FontColors = {
-        'Clothes': 'skyblue',
-        'Food': 'papayawhip',
-        'Education' : 'Plum',
-        'Health' : 'salmon'
-
-        
-      };
-     
-      const DefaultCol = 'gray';
-      const FontColor = FontColors[category] || DefaultCol
-
 
 
   return (
-    <div className='max-w-[1200px] mx-auto'>
-      
+<div>
+
+<div className=''>
+      <div className="">
       <Link to={`/details/${id}`}>
         
         <div  className="card w-60 h-full shadow-xl rounded-lg"  style={{ backgroundColor : bbackgroundColor }} >
@@ -59,7 +48,7 @@ const Card = ({card}) => {
 
 
   <div className="card-actions ">
-      <button  className="btn pt-1 px-3 font-bold text-2xl rounded-md ml-2 mt-4 " style={{ backgroundColor : textColor , color : FontColor  }}>{category}</button>
+      <button  className="btn pt-1 px-3 rounded-md ml-2 mt-4 " style={{ backgroundColor : textColor  }}>{category}</button>
     </div>
 
     <h2 className="card-title mt-6 mb-5 font-bold mx-2" style={{color : textColor }}>{title}</h2>
@@ -68,9 +57,12 @@ const Card = ({card}) => {
     
   </div>
   
-</div> </Link>
+</div> </Link> </div>
     </div>
+
+</div>
+    
   )
 }
 
-export default Card
+export default ShowCard
