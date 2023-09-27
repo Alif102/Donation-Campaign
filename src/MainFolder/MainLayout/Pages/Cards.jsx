@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import jsonData from '../../../../public/Data.json';
-import ShowCard from "./ShowCard";
+// import jsonData from '../../../../public/Data.json';
+ import ShowCard from "./ShowCard";
 import Card from "./Card"
 
 const Cards = ({cards}) => {
@@ -16,9 +16,9 @@ const Cards = ({cards}) => {
   const handleSearch = () => {
     setIsShow(!isShow)
 
-    const filteredData = jsonData.filter(item => item.category === category);
+    const filteredData = cards.filter(item => item.category === category);
     setData(filteredData);
-    console.log(filteredData)
+    
   };
   // banner function end
 
@@ -104,7 +104,9 @@ const Cards = ({cards}) => {
       </ul>
       </div>
       :
-                  cards.map(card => <Card key={card.id} card={card} ></Card>)
+
+                   cards.map(card => <Card key={card.id} card={card} ></Card>)
+                  // cards.map(card=> (<Card key={cards.id} card={card}></Card>))
                 
             }
         </div> 

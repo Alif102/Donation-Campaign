@@ -32,7 +32,7 @@ const Detail = ({detail}) => {
         <div className='bg-image'>
         <img className="md:w-[1200px]  mx-auto" src={image} alt="img" />
         </div>
-        <div className=" bg-back">
+        <div className="bg-back  ">
         <button onClick={handleAddToDonate} className="bg-[red] text-white font-bold rounded-md mt-3 py-2 px-3">Donate $ {price}</button>
         </div>
         <div className=" md:hidden lg:hidden">
