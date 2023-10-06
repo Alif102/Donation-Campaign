@@ -1,28 +1,32 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
-// import jsonData from '../../../../public/Data.json';
- import ShowCard from "./ShowCard";
+import axios from "axios";
 import Card from "./Card"
-
-const Cards = ({cards}) => {
-
-
-  // banner function
-
-  const [category, setCategory] = useState('');
-  const [data, setData] = useState([]);
-  const [isShow, setIsShow] = useState(false);
-
-  const handleSearch = () => {
-    setIsShow(!isShow)
-
-    const filteredData = cards.filter(item => item.category === category);
-    setData(filteredData);
-    
-  };
-  // banner function end
+import { useEffect, useState } from "react";
 
 
+const Cards = () => {
+
+    const [records, setRecords] = useState([])
+   const [search, setSearch] = useState([]);
+
+   const loaderData = async () => {
+    axios.get('http://localhost:3000/posts')
+    .then(res=> setSearch(res.data))
+    .catch(error => console.log(error)
+      )
+   }
+
+   useEffect( ()=> {
+    loaderData();
+   }, [])
+
+  const searchRecords = ()=> {
+
+    axios.get(`http://localhost:3000/posts/?category=${records}`)
+    .then(res => {
+      setSearch(res.data)
+    })
+  }
 
 
   return (
@@ -33,29 +37,30 @@ const Cards = ({cards}) => {
 
       <div>
            
-<div className="opacity-20 ">
-<img className=" w-full" src='/public/Resources/bgg.jpg' />
-</div>
+          <div className="opacity-20 "> 
+          <img className=" w-full" src='/Resources/bgg.jpg' />
+          </div>
 
             
             <div className=" container text-center mx-auto my-[-40%]   md:space-y-5 absolute">
                 <h2 className="text-center text-3xl font-bold mb-5 mt-16">I Grow By Helping People In Need</h2>
                 <div className=" container text-center mx-auto my-[10%]   md:space-y-5 absolute">
 
-{/*                 
-                <div className=" full-width">
-            <input id="search-field" type="text" placeholder="Search Here...." className="border-solid border-2 border-gray-400  p-3 rounded-md "  />
-            <button onClick={handleSearch}
-              className="button rounded-md btn bg-[red] text-white p-3">Search</button>
-          </div> */}
+
 
           <input className="border-solid border-2 border-gray-400  p-3 rounded-md " 
         type="text"
         placeholder="Enter Category"
-        value={category}
-        onChange={(e) => setCategory(e.target.value)}
+
+        onChange={e => setRecords(e.target.value)}
+        
+      
+          // onChange={(e) => setRecords(e.target.value)}
+        
       />
-      <button className="button rounded-md btn bg-[red] text-white p-3" onClick={handleSearch}>Search</button>
+      <button 
+       onClick={searchRecords}
+       className="button rounded-md btn bg-[red] text-white p-3">Search</button>
 
       
 
@@ -90,29 +95,16 @@ const Cards = ({cards}) => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 rounded-md mt-8 mb-12 gap-5">
            
-            {
-              isShow ? 
-              <div className=" mt-5 ">
-            <ul className="md:flex md:flex-1 gap-5">
-        {data.map((item) => (
-          
-          <ShowCard key={item.id} item={item}></ShowCard>
-       
-        
-          
-        ))}
-      </ul>
-      </div>
-      :
-
-                   cards.map(card => <Card key={card.id} card={card} ></Card>)
-                  // cards.map(card=> (<Card key={cards.id} card={card}></Card>))
-                
-            }
+            
+                    {
+                   search.map((card) => 
+                    <Card key={card.id} card={card} ></Card>) 
+                   }
+            
         </div> 
         </div>
     </div>
   )
-}
+                  }
 
 export default Cards

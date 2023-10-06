@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav id="sidebar" className="flex items-center justify-between p-6">
 
             <div>
-                <img src='/public/Resources/Logo.png' alt="Logo" />
+                <img src='/Resources/Logo.png' alt="Logo" />
             </div>
             <ul className="flex gap-7">
                 <li>
